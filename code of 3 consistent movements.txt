@@ -1,0 +1,33 @@
+#include <Servo.h>
+// Amer code.
+
+int ShoulderJoint=80; 
+int ElbowJoint=40;
+int HandJoint=30;
+
+
+Servo Shoulder;
+Servo Elbow;
+Servo Hand;
+
+void setup()
+{
+  
+  
+  Shoulder.attach(8);
+  Shoulder.write(ShoulderJoint);// ShoulderJoint (yellow wire)will move by angle of 80
+  
+  Elbow.attach(7); 
+  Elbow.write(ElbowJoint);//ElbowJoint (blue wire)will move by angle of 40
+  
+  Hand.attach(6);
+  Hand.write(HandJoint);// HandJoint (purple wire) will move by angle of 30
+ 
+
+  
+}
+
+void loop()
+{
+ 
+}
